@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="tempo()">
+
+<header>
+<div class="head-cont">
+    <div class="time">
+        <h1 id="txtDate"></h1>
+        <h1 id="txt"></h1>
+    </div>
+    <div class="cumprimento">
+        <h2 id="cumprimento"></h2>
+    </div>
+</div>
+</header>
+
+    <section>
+        <h1 class="title">Faixa etária de idade</h1>
+        <div class="faixa-etaria">
+            <label>Digite a sua idade</label>
+            <input type="text" id="idade" required="required"/>
+            <button class="botao" id="btn-idade" onclick="idades()">Verifique sua faixa etária</button>
+            <h1 id="text-etaria" style="color: red;"></h1>
+        </div>
+    </section>
+    <section class="tabuada">
+             <h2 class="title">Tabuada</h2>
+             <div class="tabela">
+                <table>
+                    <tr id="textTabuada"></tr>
+                </table>
+            </div>  
+             <div class="input-tabuada">
+                <label>Digite qualquer número e veja a sua tabuada até 10.</label>
+                <input type="number" id="num" required="required"/>
+                <select class="div-select" name="opcoes" id="operador">
+                    <option value="adicao">(+) Soma</option>
+                    <option value="-">(-) subtração</option>
+                    <option value="*">(x) Multiplicação</option>
+                    <option value="/">(÷) Divisão</option>
+                </select>  
+                <button class="botao" id="btn-tabuada" onclick="valida_form (); tabuada()" >Mostrar Tabuada</button>
+                <button class="botao" id="btn-tabuada" type="button" value="Limpar Tabuada" onClick="history.go(0)">Limpar</button>
+            </div>
+    </section>
+
+
+    <script src="hora.js"></script>
+    <script src="idade.js"></script>
+    <script src="tabuada.js"></script>
+    
+</body>
+</html>
