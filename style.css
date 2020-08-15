@@ -27,10 +27,10 @@ header h2 {
     float: right;
 }
 section {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .title {
-    margin-top: 50px;
+    margin-top: 30px;
     margin: auto;
     width: 75%;
     border-bottom: 2px solid #ddd;
@@ -38,13 +38,13 @@ section {
 .faixa-etaria{
     margin: auto;
     width: 75%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .input-tabuada{
     width: 75%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input {
